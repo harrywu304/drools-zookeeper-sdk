@@ -1,0 +1,12 @@
+package rules.grading
+
+import java.util.Map;
+
+rule "test map rule"
+    when
+    	$map:Map(id == 456)
+    then
+        System.out.println("rule.name:" + kcontext.getRule().getName());
+        System.out.println("map:" + $map.get("name"));
+end
+

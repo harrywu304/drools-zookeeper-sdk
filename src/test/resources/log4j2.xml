@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Specify the refresh internal in seconds. -->
+<Configuration monitorInterval="60">
+	<Properties>
+	<!-- 
+		<Property name="LOGHOME">/Users/wuhx/dev/logs/testdrools</Property>
+	 -->
+	</Properties>
+	<Appenders>
+		<Console name="console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d %p [%c] - &lt;%m&gt;%n" />
+		</Console>
+		<!-- 
+		<RollingFile name="file" fileName="${LOGHOME}/app.log"
+			append="true" filePattern="${LOGHOME}/app-%d{yyyy-MM-dd}-%i.log">
+			<PatternLayout pattern="%d (%F:%L) %-5p - %m%n" />
+			<Policies>
+				<OnStartupTriggeringPolicy />
+				<SizeBasedTriggeringPolicy size="100 MB" />
+				<TimeBasedTriggeringPolicy />
+			</Policies>
+		</RollingFile>
+		 -->
+	</Appenders>
+	<Loggers>
+		<!--
+		<Logger name="org.pub" level="debug" additivity="false"
+			includeLocation="true">
+			<AppenderRef ref="console" />
+			<AppenderRef ref="file" />
+		</Logger>
+		<-->
+		<Root level="debug">
+			<AppenderRef ref="console" />
+
+		</Root>
+	</Loggers>
+</Configuration>
