@@ -5,7 +5,6 @@ package org.pub.droolszk.helper;
 
 import org.junit.AfterClass;
 import org.junit.BeforeClass;
-import org.junit.Test;
 import org.pub.droolszk.api.RuleService;
 
 import java.util.HashMap;
@@ -40,7 +39,7 @@ public class ZkRuleHelperTest {
 	public static void tearDownAfterClass() throws Exception {
 	}
 
-	@Test
+	//@Test
 	public void testGetRuleService() throws Exception {
 
 
